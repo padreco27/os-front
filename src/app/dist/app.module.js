@@ -26,6 +26,9 @@ var snack_bar_1 = require("@angular/material/snack-bar");
 var app_routing_module_1 = require("./app-routing.module");
 var app_component_1 = require("./app.component");
 var animations_1 = require("@angular/platform-browser/animations");
+var header_component_1 = require("./views/components/template/header/header.component");
+var footer_component_1 = require("./views/components/template/footer/footer.component");
+var nav_component_1 = require("./views/components/template/nav/nav.component");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -33,6 +36,9 @@ var AppModule = /** @class */ (function () {
         core_1.NgModule({
             declarations: [
                 app_component_1.AppComponent,
+                header_component_1.HeaderComponent,
+                footer_component_1.FooterComponent,
+                nav_component_1.NavComponent
             ],
             imports: [
                 platform_browser_1.BrowserModule,

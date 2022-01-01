@@ -23,6 +23,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './views/components/template/header/header.component';
 import { FooterComponent } from './views/components/template/footer/footer.component';
+import { NavComponent } from './views/components/template/nav/nav.component';
+
 
 
 
@@ -31,6 +33,7 @@ import { FooterComponent } from './views/components/template/footer/footer.compo
     AppComponent,
     HeaderComponent,
     FooterComponent,
+    NavComponent
   
     
   ],
