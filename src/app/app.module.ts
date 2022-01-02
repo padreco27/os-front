@@ -24,6 +24,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './views/components/template/header/header.component';
 import { FooterComponent } from './views/components/template/footer/footer.component';
 import { NavComponent } from './views/components/template/nav/nav.component';
+import { HomeComponent } from './views/components/home/home.component';
+import { TecnicoComponent } from './views/components/tecnico/tecnico.component';
+import { TecnicoReadComponent } from './views/components/tecnico/tecnico-read/tecnico-read.component';
+import { TecnicoUptadeComponent } from './views/components/tecnico/tecnico-uptade/tecnico-uptade.component';
+
 
 
 
@@ -33,7 +38,12 @@ import { NavComponent } from './views/components/template/nav/nav.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    HomeComponent,
+    TecnicoComponent,
+    TecnicoReadComponent,
+    TecnicoUptadeComponent,
+   
   
     
   ],

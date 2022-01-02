@@ -1,0 +1,52 @@
+"use strict";
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+exports.__esModule = true;
+exports.ClienteService = void 0;
+var core_1 = require("@angular/core");
+var environment_1 = require("src/environments/environment");
+var ClienteService = /** @class */ (function () {
+    function ClienteService(http, snack) {
+        this.http = http;
+        this.snack = snack;
+        this.baseUrl = environment_1.environment.baseUrl;
+    }
+    ClienteService.prototype.findAll = function () {
+        var url = this.baseUrl + "/clientes";
+        return this.http.get(url);
+    };
+    ClienteService.prototype.findById = function (id) {
+        var url = this.baseUrl + "/clientes/" + id;
+        return this.http.get(url);
+    };
+    ClienteService.prototype.create = function (cliente) {
+        var url = this.baseUrl + "/clientes";
+        return this.http.post(url, cliente);
+    };
+    ClienteService.prototype.update = function (cliente) {
+        var url = this.baseUrl + "/clientes/" + cliente.id;
+        return this.http.put(url, cliente);
+    };
+    ClienteService.prototype["delete"] = function (id) {
+        var url = this.baseUrl + "/clientes/" + id;
+        return this.http["delete"](url);
+    };
+    ClienteService.prototype.message = function (msg) {
+        this.snack.open("" + msg, 'OK', {
+            horizontalPosition: 'end',
+            verticalPosition: 'top',
+            duration: 4000
+        });
+    };
+    ClienteService = __decorate([
+        core_1.Injectable({
+            providedIn: 'root'
+        })
+    ], ClienteService);
+    return ClienteService;
+}());
+exports.ClienteService = ClienteService;

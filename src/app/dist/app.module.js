@@ -29,6 +29,8 @@ var animations_1 = require("@angular/platform-browser/animations");
 var header_component_1 = require("./views/components/template/header/header.component");
 var footer_component_1 = require("./views/components/template/footer/footer.component");
 var nav_component_1 = require("./views/components/template/nav/nav.component");
+var home_component_1 = require("./views/components/home/home.component");
+var tecnico_component_1 = require("./views/components/tecnico/tecnico.component");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -38,7 +40,9 @@ var AppModule = /** @class */ (function () {
                 app_component_1.AppComponent,
                 header_component_1.HeaderComponent,
                 footer_component_1.FooterComponent,
-                nav_component_1.NavComponent
+                nav_component_1.NavComponent,
+                home_component_1.HomeComponent,
+                tecnico_component_1.TecnicoComponent,
             ],
             imports: [
                 platform_browser_1.BrowserModule,
