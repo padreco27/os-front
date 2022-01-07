@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
+import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatSelectModule } from '@angular/material/select';
@@ -18,6 +18,10 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {MatMenuModule} from '@angular/material/menu';
+
+
+
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -28,8 +32,8 @@ import { HomeComponent } from './views/components/home/home.component';
 import { TecnicoComponent } from './views/components/tecnico/tecnico.component';
 import { TecnicoReadComponent } from './views/components/tecnico/tecnico-read/tecnico-read.component';
 import { TecnicoUptadeComponent } from './views/components/tecnico/tecnico-uptade/tecnico-uptade.component';
-
-
+import { TecnicoCreateComponent } from './views/components/tecnico/tecnico-create/tecnico-create.component';
+import { TecnicoDeleteComponent } from './views/components/tecnico/tecnico-delete/tecnico-delete.component';
 
 
 
@@ -43,15 +47,17 @@ import { TecnicoUptadeComponent } from './views/components/tecnico/tecnico-uptad
     TecnicoComponent,
     TecnicoReadComponent,
     TecnicoUptadeComponent,
-   
+    TecnicoCreateComponent,
+    TecnicoDeleteComponent
   
     
   ],
   imports: [
-    BrowserModule,
+  
+
+  BrowserModule,
+   
     AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
     BrowserModule,
@@ -67,8 +73,12 @@ import { TecnicoUptadeComponent } from './views/components/tecnico/tecnico-uptad
     MatSelectModule,
     MatInputModule,
     MatDatepickerModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatPaginatorModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatMenuModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

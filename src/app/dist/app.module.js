@@ -9,6 +9,7 @@ exports.__esModule = true;
 exports.AppModule = void 0;
 var platform_browser_1 = require("@angular/platform-browser");
 var core_1 = require("@angular/core");
+var form_field_1 = require("@angular/material/form-field");
 var forms_1 = require("@angular/forms");
 var http_1 = require("@angular/common/http");
 var select_1 = require("@angular/material/select");
@@ -25,12 +26,15 @@ var paginator_1 = require("@angular/material/paginator");
 var snack_bar_1 = require("@angular/material/snack-bar");
 var app_routing_module_1 = require("./app-routing.module");
 var app_component_1 = require("./app.component");
+var menu_1 = require("@angular/material/menu");
 var animations_1 = require("@angular/platform-browser/animations");
 var header_component_1 = require("./views/components/template/header/header.component");
 var footer_component_1 = require("./views/components/template/footer/footer.component");
 var nav_component_1 = require("./views/components/template/nav/nav.component");
 var home_component_1 = require("./views/components/home/home.component");
 var tecnico_component_1 = require("./views/components/tecnico/tecnico.component");
+var tecnico_read_component_1 = require("./views/components/tecnico/tecnico-read/tecnico-read.component");
+var tecnico_uptade_component_1 = require("./views/components/tecnico/tecnico-uptade/tecnico-uptade.component");
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -43,6 +47,8 @@ var AppModule = /** @class */ (function () {
                 nav_component_1.NavComponent,
                 home_component_1.HomeComponent,
                 tecnico_component_1.TecnicoComponent,
+                tecnico_read_component_1.TecnicoReadComponent,
+                tecnico_uptade_component_1.TecnicoUptadeComponent,
             ],
             imports: [
                 platform_browser_1.BrowserModule,
@@ -65,7 +71,9 @@ var AppModule = /** @class */ (function () {
                 input_1.MatInputModule,
                 datepicker_1.MatDatepickerModule,
                 paginator_1.MatPaginatorModule,
-                snack_bar_1.MatSnackBarModule
+                snack_bar_1.MatSnackBarModule,
+                form_field_1.MatFormFieldModule,
+                menu_1.MatMenuModule
             ],
             providers: [],
             bootstrap: [app_component_1.AppComponent]

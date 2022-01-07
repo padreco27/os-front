@@ -10,6 +10,7 @@ exports.AppRoutingModule = void 0;
 var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var home_component_1 = require("./views/components/home/home.component");
+var tecnico_create_component_1 = require("./views/components/tecnico/tecnico-create/tecnico-create.component");
 var tecnico_read_component_1 = require("./views/components/tecnico/tecnico-read/tecnico-read.component");
 var routes = [
     {
@@ -19,7 +20,11 @@ var routes = [
     {
         path: 'tecnicos',
         component: tecnico_read_component_1.TecnicoReadComponent
-    }
+    },
+    {
+        path: 'tecnicos/create',
+        component: tecnico_create_component_1.TecnicoCreateComponent
+    },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
