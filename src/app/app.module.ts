@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatSelectModule } from '@angular/material/select';
@@ -15,10 +15,10 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
-import {MatSnackBarModule} from '@angular/material/snack-bar';
-import { AppRoutingModule } from './app-routing.module';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 import { AppComponent } from './app.component';
-import {MatMenuModule} from '@angular/material/menu';
+import { MatMenuModule } from '@angular/material/menu';
 
 
 
@@ -34,6 +34,19 @@ import { TecnicoReadComponent } from './views/components/tecnico/tecnico-read/te
 import { TecnicoUptadeComponent } from './views/components/tecnico/tecnico-uptade/tecnico-uptade.component';
 import { TecnicoCreateComponent } from './views/components/tecnico/tecnico-create/tecnico-create.component';
 import { TecnicoDeleteComponent } from './views/components/tecnico/tecnico-delete/tecnico-delete.component';
+import { ClienteComponent } from './views/components/cliente/cliente.component';
+import { OsComponent } from './views/components/os/os.component';
+import { ClienteReadComponent } from './views/components/cliente/cliente-read/cliente-read.component';
+import { ClienteCreateComponent } from './views/components/cliente/cliente-create/cliente-create.component';
+import { ClienteDeleteComponent } from './views/components/cliente/cliente-delete/cliente-delete.component';
+import { ClienteUptadeComponent } from './views/components/cliente/cliente-uptade/cliente-uptade.component';
+import { OsReadComponent } from './views/components/os/os-read/os-read.component';
+
+import { OsCreateComponent } from './views/components/os/os-create/os-create.component';
+import { OsUptadeComponent } from './views/components/os/os-uptade/os-uptade.component';
+import { OsClosedComponent } from './views/components/os/os-closed/os-closed.component';
+import { OsDescriptionComponent } from './views/components/os/os-description/os-description.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 
@@ -48,20 +61,35 @@ import { TecnicoDeleteComponent } from './views/components/tecnico/tecnico-delet
     TecnicoReadComponent,
     TecnicoUptadeComponent,
     TecnicoCreateComponent,
-    TecnicoDeleteComponent
-  
-    
+    TecnicoDeleteComponent,
+    ClienteComponent,
+    OsComponent,
+    ClienteReadComponent,
+    ClienteCreateComponent,
+    ClienteDeleteComponent,
+    ClienteUptadeComponent,
+    OsReadComponent,
+
+    OsCreateComponent,
+    OsUptadeComponent,
+    OsClosedComponent,
+    OsDescriptionComponent
+
+
   ],
   imports: [
+ 
   
 
-  BrowserModule,
-   
     AppRoutingModule,
+    
+    BrowserModule,
+
+   
     BrowserAnimationsModule,
     HttpClientModule,
     BrowserModule,
-    AppRoutingModule,
+    
     BrowserAnimationsModule,
     MatToolbarModule,
     MatSidenavModule,

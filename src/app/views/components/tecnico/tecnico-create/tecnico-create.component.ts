@@ -19,7 +19,7 @@ export class TecnicoCreateComponent implements OnInit {
     telefone: ''
   }
 
-  nome = new FormControl('', [Validators.minLength(5)])
+  nome = new FormControl('', [Validators.minLength(3)])
   cpf = new FormControl('', [Validators.minLength(11)])
   telefone = new FormControl('', [Validators.minLength(11)])
 
@@ -45,6 +45,7 @@ export class TecnicoCreateComponent implements OnInit {
         this.service.message("CPF inválido!")
       }
     })
+    
   }
 
   errorValidName() {

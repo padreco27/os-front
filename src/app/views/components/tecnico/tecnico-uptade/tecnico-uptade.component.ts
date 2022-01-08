@@ -35,7 +35,9 @@ export class TecnicoUptadeComponent implements OnInit {
   }
 
   update():void {
+    
     this.service.update(this.tecnico).subscribe((resposta) => {
+      console.log(this.update)
       this.router.navigate(['tecnicos'])
       this.service.message('Técnico atualizado com sucesso!')
     }, err => {
@@ -45,6 +47,7 @@ export class TecnicoUptadeComponent implements OnInit {
         this.service.message("CPF inválido!")
       }
     })
+    console.log(this.update)
   }
 
   findById(): void {
