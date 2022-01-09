@@ -57,19 +57,22 @@ import { AppRoutingModule } from './app-routing.module';
     FooterComponent,
     NavComponent,
     HomeComponent,
+
     TecnicoComponent,
     TecnicoReadComponent,
     TecnicoUptadeComponent,
     TecnicoCreateComponent,
     TecnicoDeleteComponent,
+
     ClienteComponent,
-    OsComponent,
+    
     ClienteReadComponent,
     ClienteCreateComponent,
     ClienteDeleteComponent,
     ClienteUptadeComponent,
+    
     OsReadComponent,
-
+    OsComponent,
     OsCreateComponent,
     OsUptadeComponent,
     OsClosedComponent,

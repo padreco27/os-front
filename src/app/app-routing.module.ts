@@ -38,6 +38,10 @@ const routes: Routes = [
       path:'tecnicos/delete/:id',
       component:TecnicoDeleteComponent
     },
+
+
+
+
     
     {
       path: 'clientes',
@@ -55,6 +59,10 @@ const routes: Routes = [
       path: 'clientes/delete/:id',
       component: ClienteDeleteComponent
     },
+
+
+
+    
     {
       path: 'os',
       component: OsReadComponent

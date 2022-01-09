@@ -39,6 +39,7 @@ export class TecnicoCreateComponent implements OnInit {
       this.router.navigate(['tecnicos'])
       this.service.message('Tecnico criado com sucesso!')
     }, err => {
+      console.log(err)
       if (err.error.error.match('já cadastrado')) {
         this.service.message(err.error.error)
       } else if (err.error.errors[0].message === "número do registro de contribuinte individual brasileiro (CPF) inválido") {
